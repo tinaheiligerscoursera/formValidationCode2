@@ -28,8 +28,7 @@
         <input type="text" name="name" class="form-control"
         ng-model="name"
         required>
-        <p ng-show="userForm.name.$invalid && 
-        !userForm.name.$pristine" 
+        <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" 
         class="help-block">Your name is required.</p>
       </div>
 
@@ -39,18 +38,15 @@
         <input type="text" name="username" class="form-control"
         ng-model="user.username"
         ng-minlength="3" ng-maxlength="8">
-        <p ng-show="userForm.username.$error.minlength"
-        class="help-block">Username is too short.</p>
-        <p ng-show="userForm.username.$error.maxlength"
-        class="help-block">Username is too long.</p>
+        <p ng-show="userForm.username.$error.minlength" class="help-block">Username is too short.</p>
+        <p ng-show="userForm.username.$error.maxlength" class="help-block">Username is too long.</p>
       </div>
 
       <!-- EMAIL -->
       <div class="from-group">
         <label>Email</label>
-        <input type="email" name="email" class="form-control"
-        ng-model="email">
-        <p ng-show="userForm.email.$invalid && !userForm.email.$pristine"
+        <input type="email" name="email" class="form-control" ng-model="email">
+        <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" 
         class="help-block">Enter a valid email address.</p>
       </div>
       <br>
