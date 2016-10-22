@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="validationApp">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- load Angular -->
+  <script src="http://code.angularjs.org/1.2.6/angular.js"></script>
+  <script src="app.js"></script>
+  <title>Form Validation</title>
+</head>
+<!-- add angular controller -->
+<body ng-controller="mainController">
+  <div class="container">
+    <div class="col-sm-8 col-sm-offset-2">
+
+    <!-- PAGE HEADER -->
+    <div class="from-group">
+      <label>Name</label>
+      <input type="text" name="name" class="form-control"
+      ng-model="name"
+      required>
+    </div>
+
+    <!-- USERNAME -->
+    <div class="from-group">
+      <label>Username</label>
+      <input type="text" name="username" class="form-control"
+      ng-model="user.username"
+      ng-minlength="3" ng-maxlength="8">
+    </div>
+    </div>
+  </div>
+
+</body>
+</html>
